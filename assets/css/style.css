@@ -5,28 +5,50 @@
 
 .header, .footer {
   background-color: lightgray;
-  padding: 4%;
+  padding: 2%;
   text-align: center;
 }
 
-.main, .section {
-  background-color: blue;
-  padding: 4%;
+h1 {
+  font-size: 2em;
 }
 
-.gallery img{
-  float: left;
+h2 {
+  font-size: 1.4em;
+}
+
+label{
+  font-size: 1em;
+}
+
+.footer{
+  font-size: small;
+}
+
+.main, .section {
+  width: 100%;
+  background-color: blue;
+  padding: 2%;
+  display: table;
+}
+.main {
+  border-bottom: 1px dashed lightgray;
+}
+.gallery img {
   display: block;
   background-color: lightblue;
-  max-width: 100%;
+  max-width: 98%;
   border: 1px solid lightblue;
   margin: 1%;
+}
+.gallery{
+  float: left;
 }
 
 .form{
   background-color: #203050;
   display: block;
-  padding: 4%;
+  padding: 2%;
   color: lightgray;
 }
 
@@ -34,14 +56,21 @@
   display: block;
   width: 100%;
 }
+.message-wrap {
+  display: table;
+  width: 100%;
+}
 .txtarea {
-  height: 3em;
   width: 100%;
   overflow: hidden;
+  resize: none;
 }
-
+.field-wrap {
+  padding-bottom: 1%; 
+}
 .button-wrap{
   text-align: center;
+  padding-top: 1%;
 }
 
 .button, .button-res{
@@ -52,8 +81,8 @@
 
 
 @media all and (min-width: 30em) {
-  .gallery img {
-    max-width: 48%;
+  .gallery {
+    max-width: 50%;
   }
   .field-wrap {
     float: left;
@@ -68,7 +97,13 @@
 }
 
 @media all and (min-width: 50em) {
-  .gallery img {
-    max-width: 23%;
+  .gallery {
+    max-width: 25%;
+  }
+  h1 {
+    font-size: 2.83em;
+  }
+  h2 {
+    font-size: 2em;
   }
 }
