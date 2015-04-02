@@ -5,6 +5,8 @@
 }
 
 .header, .footer {
+  float: left;
+  width: 100%;
   background-color: lightgray;
   padding: 2%;
   text-align: center;
@@ -28,10 +30,11 @@ label{
 }
 
 .main, .section {
+  float: left;
   width: 100%;
   background-color: blue;
   padding: 2%;
-  display: table;
+  display: block;
 }
 .main {
   border-bottom: 1px dashed lightgray;
@@ -45,6 +48,7 @@ label{
 }
 .gallery {
   float: left;
+  width: 100%;
 }
 
 .form {
